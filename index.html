@@ -40,13 +40,13 @@
 <header class="jumbotron masthead">
   <div class="container">
   <div class="inner">
-    <h1 id="logo">TryCloud.org</h1>
+    <h1 id="logo">TryStack.org</h1>
     <p class="openstack">A Free Way To Try OpenStack With Your Apps.</p>
     <hr/>
       <div class="row freecloud-intro">
 
     <div class="span2">
-      <a class="video-preview" title="Dashboard Demo" href="http://www.youtube.com/embed/yNdIRCn6Mo8"><img src="img/video-preview.png" /></a>
+      
     </div>
 
     <div class="span6">
@@ -140,11 +140,11 @@
     </div>
     <div class="span10">
       <h2>What can I do with TryStack?</h2>
-      <p>TryStack, in large part, resembles the type of cloud environment you can create on your own with OpenStack Software. However, we have set a few sensible limits in place for the good of the project. First, the server instances you launch are only available for 24 hours until the hardware is reclaimed for use by new instances. Secondly, you can't upload your own server images, you can only select from two available images (Ubuntu Oneiric Ocelot and Natty Narwhal). Finally, not all APIs and features of OpenStack are available. The two APIs you can use currently are the OpenStack Compute API and the OpenStack Identity Services API.</p>
+      <p>TryStack, in large part, resembles the type of cloud environment you can create on your own with OpenStack Software. However, we have set a few sensible limits in place for the good of the project. First, the server instances you launch are only available for 24 hours until the hardware is reclaimed for use by new instances. Secondly, you can't upload your own server images, you can only select from three available images (Ubuntu 12.10, Fedora17 and Fedora18). The API endpoints you can use are listed within the Dashboard on the OpenStack API page.</p>
       <h2>How should I use TryStack?</h2>
       <p><strong>For testing purposes only&mdash;TryStack is a testing environment by design.</strong> Instances are typically deleted after 24 hours, so for obvious reasons you should <strong>NOT</strong> put any data on this cloud you don't want to lose.</p>
       <h2>Wait... the server instances I create won't last forever?</h2>
-      <p>You got it. Scripts run periodically to remove instances after 24-hours. Your instances may also be removed if your account runs out of credits (lovingly called Stack Dollars). You can read more about how that all works below. </p>
+      <p>You got it. Scripts run periodically to remove instances after 24-hours. Your instances may also be removed if your account uses more than your allocated project quota of one instance. </p>
       <h2>Is there an SLA?</h2>
       <p>Since this cloud is managed by volunteers in the OpenStack community, there is no SLA. The cloud may go down from time to time for maintenance or to upgrade to the latest release of OpenStack.</p>
     </div>
@@ -155,9 +155,9 @@
       <h2>Credits</h2>
     </div>
     <div class="span10">
-      <h2>What are "Stack Dollars"?</h2>
-      <p>When you first get your account, it will be preloaded with a set amount of credits called Stack Dollars. At any time, you can check how many Stack Dollars you have available to you in the Dashboard. Certain activities (whether performed in the Dashboard or via API) consume Stack Dollars. For example, launching a new instance consumes 100. Running instances consume Stack Dollars every ten minutes they are run. The amount of Stack Dollars consumed varies depending on the size of each instance. The bigger the instance, the faster your Stack Dollars will be consumed.</p>
-      <p>Don't get too hung up on Stack Dollars, they are really just there to prevent abuse. You should find you have ample credits available for almost any testing scenario. One tip: If the size of the server instances you launch doesn't matter too much to your tests and experimentation, you'll get more life out of your account by launching smaller instances. (Plus you'll get karma points since there will be more capacity available to others.)</p>
+      <h2>Why can't I have more project quota?</h2>
+      <p>When you first get your account, it will be preloaded with a set amount of project quota which is 1 instance and 512 MB RAM total.</p>
+      <p>Don't get too hung up on your quota, we have to keep limits in place to prevent abuse. </p>
     </div>
   </div><!--/row-->
 
